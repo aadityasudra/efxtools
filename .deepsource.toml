@@ -1,0 +1,22 @@
+version = 1
+
+[[analyzers]]
+name = "test-coverage"
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  environment = [
+    "browser",
+    "jquery"
+  ]
+
+[[analyzers]]
+name = "sql"
+
+[[analyzers]]
+name = "php"
+
+[[transformers]]
+name = "php-cs-fixer"
