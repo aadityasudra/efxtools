@@ -1,15 +1,45 @@
 version = 1
 
 [[analyzers]]
+name = "ruby"
+
+[[analyzers]]
+name = "secrets"
+
+[[analyzers]]
+name = "docker"
+
+[[analyzers]]
+name = "java"
+
+  [analyzers.meta]
+  runtime_version = "11"
+
+[[analyzers]]
 name = "test-coverage"
 
 [[analyzers]]
 name = "javascript"
 
   [analyzers.meta]
+  plugins = [
+    "react",
+    "angular",
+    "vue",
+    "ember",
+    "meteor",
+    "angularjs"
+  ]
   environment = [
     "browser",
-    "jquery"
+    "jquery",
+    "mongo",
+    "nodejs",
+    "jest",
+    "cypress",
+    "vitest",
+    "mocha",
+    "jasmine"
   ]
 
 [[analyzers]]
@@ -20,3 +50,18 @@ name = "php"
 
 [[transformers]]
 name = "php-cs-fixer"
+
+[[transformers]]
+name = "prettier"
+
+[[transformers]]
+name = "standardjs"
+
+[[transformers]]
+name = "google-java-format"
+
+[[transformers]]
+name = "rubocop"
+
+[[transformers]]
+name = "standardrb"
