@@ -1,6 +1,27 @@
 version = 1
 
 [[analyzers]]
+name = "swift"
+
+[[analyzers]]
+name = "rust"
+
+  [analyzers.meta]
+  msrv = "stable"
+
+[[analyzers]]
+name = "terraform"
+
+[[analyzers]]
+name = "scala"
+
+[[analyzers]]
+name = "shell"
+
+[[analyzers]]
+name = "ansible"
+
+[[analyzers]]
 name = "ruby"
 
 [[analyzers]]
@@ -65,3 +86,6 @@ name = "rubocop"
 
 [[transformers]]
 name = "standardrb"
+
+[[transformers]]
+name = "scalafmt"
